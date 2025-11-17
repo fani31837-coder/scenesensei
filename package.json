@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "tsc && vite build && npm run build:pwa",
-    "build:pwa": "workbox generateSW workbox.config.js",
+    "build:pwa": "workbox generateSW workbox.config.cjs",
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
@@ -51,6 +51,7 @@
     "@vitejs/plugin-react": "^4.2.0",
     "autoprefixer": "^10.4.22",
     "eslint": "^8.55.0",
+    "jsdom": "^27.2.0",
     "prettier": "^3.1.0",
     "tsx": "^4.6.2",
     "typescript": "^5.3.0",
