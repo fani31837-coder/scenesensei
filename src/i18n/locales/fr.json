@@ -1,0 +1,61 @@
+{
+  "app": {
+    "name": "SceneSensei",
+    "tagline": "Composition professionnelle de scènes 3D et animation"
+  },
+  "nav": {
+    "home": "Accueil",
+    "editor": "Éditeur",
+    "marketplace": "Marketplace",
+    "projects": "Projets",
+    "account": "Compte",
+    "settings": "Paramètres",
+    "logout": "Déconnexion"
+  },
+  "editor": {
+    "newScene": "Nouvelle scène",
+    "addObject": "Ajouter un objet",
+    "delete": "Supprimer",
+    "duplicate": "Dupliquer",
+    "play": "Lecture",
+    "pause": "Pause",
+    "stop": "Arrêter",
+    "keyframe": "Image clé",
+    "timeline": "Chronologie",
+    "properties": "Propriétés",
+    "preview": "Aperçu"
+  },
+  "marketplace": {
+    "search": "Rechercher des actifs",
+    "models": "Modèles 3D",
+    "animations": "Animations",
+    "effects": "Effets",
+    "sounds": "Sons",
+    "price": "Prix",
+    "download": "Télécharger",
+    "buy": "Acheter",
+    "rating": "Évaluation"
+  },
+  "collab": {
+    "invite": "Inviter des collaborateurs",
+    "users": "Utilisateurs",
+    "permissions": "Autorisations",
+    "edit": "Modifier",
+    "view": "Afficher",
+    "active": "Utilisateurs actifs"
+  },
+  "export": {
+    "format": "Format",
+    "quality": "Qualité",
+    "resolution": "Résolution",
+    "frameRate": "Cadence",
+    "export": "Exporter",
+    "exporting": "Exportation en cours..."
+  },
+  "errors": {
+    "networkError": "Erreur réseau",
+    "unauthorized": "Non autorisé",
+    "notFound": "Non trouvé",
+    "serverError": "Erreur serveur"
+  }
+}

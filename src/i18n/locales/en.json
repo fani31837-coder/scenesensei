@@ -1,0 +1,61 @@
+{
+  "app": {
+    "name": "SceneSensei",
+    "tagline": "Professional 3D Animation & Scene Composition"
+  },
+  "nav": {
+    "home": "Home",
+    "editor": "Editor",
+    "marketplace": "Marketplace",
+    "projects": "Projects",
+    "account": "Account",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "editor": {
+    "newScene": "New Scene",
+    "addObject": "Add Object",
+    "delete": "Delete",
+    "duplicate": "Duplicate",
+    "play": "Play",
+    "pause": "Pause",
+    "stop": "Stop",
+    "keyframe": "Keyframe",
+    "timeline": "Timeline",
+    "properties": "Properties",
+    "preview": "Preview"
+  },
+  "marketplace": {
+    "search": "Search assets",
+    "models": "3D Models",
+    "animations": "Animations",
+    "effects": "Effects",
+    "sounds": "Sounds",
+    "price": "Price",
+    "download": "Download",
+    "buy": "Buy",
+    "rating": "Rating"
+  },
+  "collab": {
+    "invite": "Invite Collaborators",
+    "users": "Users",
+    "permissions": "Permissions",
+    "edit": "Edit",
+    "view": "View",
+    "active": "Active Users"
+  },
+  "export": {
+    "format": "Format",
+    "quality": "Quality",
+    "resolution": "Resolution",
+    "frameRate": "Frame Rate",
+    "export": "Export",
+    "exporting": "Exporting..."
+  },
+  "errors": {
+    "networkError": "Network error",
+    "unauthorized": "Unauthorized",
+    "notFound": "Not found",
+    "serverError": "Server error"
+  }
+}
