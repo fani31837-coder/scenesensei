@@ -1,0 +1,3 @@
+Removed duplicate CJS config files earlier; keep ESM `postcss.config.js` and `tailwind.config.js`. Ensure `npm run dev` is run in an active terminal to serve assets at http://localhost:5173/.
+
+If your dev server is already running in another terminal, use that one to stop/start. Avoid running multiple background `npm run dev` instances.
