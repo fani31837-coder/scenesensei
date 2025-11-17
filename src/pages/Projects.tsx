@@ -33,14 +33,17 @@ const Projects: React.FC = () => {
   }
 
   const handleCreateProject = async () => {
-    if (!newProjectName.trim() || !user) return
+    if (!newProjectName.trim()) return
+
+    // Fallback owner id for demo/local mode if no authenticated user
+    const ownerId = user?.id || 'user-1'
 
     const newProject: Project = {
       id: uuid(),
       name: newProjectName,
       description: '',
       scenes: [],
-      ownerId: user.id,
+      ownerId,
       collaborators: [],
       isPublic: false,
       createdAt: new Date(),
@@ -48,11 +51,15 @@ const Projects: React.FC = () => {
     }
 
     try {
-      await projectAPI.create(newProject)
+      // Await the API call and use returned project to update UI immediately
+      const res = await projectAPI.create(newProject)
+      const created = res.data ?? newProject
       setNewProjectName('')
-      loadProjects()
-    } catch {
-      console.error('Failed to create project')
+      // Optimistically update list without waiting for full reload
+      setProjects((prev) => [created as Project, ...prev])
+    } catch (err) {
+      console.error('Failed to create project', err)
+      // Keep user informed via console; UI error handling could be added here
     }
   }
 
