@@ -3,11 +3,15 @@ import { initReactI18next } from 'react-i18next'
 import enTranslations from './locales/en.json'
 import esTranslations from './locales/es.json'
 import frTranslations from './locales/fr.json'
+import hiTranslations from './locales/hi.json'
+import hinglishTranslations from './locales/hinglish.json'
 
 const resources = {
   en: { translation: enTranslations },
   es: { translation: esTranslations },
   fr: { translation: frTranslations },
+  hi: { translation: hiTranslations },
+  hinglish: { translation: hinglishTranslations },
 }
 
 i18n.use(initReactI18next).init({

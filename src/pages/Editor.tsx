@@ -18,13 +18,20 @@ const Editor: React.FC = () => {
   } = useEditorStore()
 
   useEffect(() => {
-    if (!currentScene) {
+    if (!currentScene && sceneId) {
       createScene(`Scene-${sceneId}`)
     }
-  }, [])
+  }, [sceneId, currentScene, createScene])
 
   if (!currentScene) {
-    return <div>Loading...</div>
+    return (
+      <div className="flex h-screen w-full items-center justify-center bg-gray-900">
+        <div className="text-center text-gray-300">
+          <div className="mb-4 text-lg">Loading scene...</div>
+          <div className="animate-spin">⚙️</div>
+        </div>
+      </div>
+    )
   }
 
   const handlePlayPause = () => {
@@ -49,7 +56,7 @@ const Editor: React.FC = () => {
       </div>
 
       {/* Main editor area */}
-      <div className="flex flex-1 gap-0">
+      <div className="flex flex-1 gap-0 overflow-hidden">
         {/* Sidebar */}
         <div className="w-64 bg-gray-800 border-r border-gray-700 overflow-y-auto">
           <div className="p-4 space-y-4">
@@ -77,7 +84,7 @@ const Editor: React.FC = () => {
         </div>
 
         {/* Viewport */}
-        <div className="flex-1 flex flex-col">
+        <div className="flex-1 flex flex-col overflow-hidden">
           <Viewport3D />
           <Timeline />
         </div>

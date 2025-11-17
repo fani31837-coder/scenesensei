@@ -12,24 +12,66 @@ app.use(cors())
 app.use(express.json({ limit: '100mb' }))
 
 // Mock database
-const mockProjects: any[] = []
-const mockScenes: any[] = []
+const mockProjects: any[] = [
+  {
+    id: 'proj-1',
+    name: 'Demo Project',
+    description: 'Welcome to SceneSensei! This is a demo project to get you started.',
+    scenes: [
+      {
+        id: 'scene-1',
+        name: 'Scene 1',
+        duration: 10,
+        fps: 30,
+        width: 1920,
+        height: 1080,
+        tracks: [],
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+    ],
+    ownerId: 'user-1',
+    collaborators: [],
+    isPublic: false,
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+]
+const mockScenes: any[] = [
+  {
+    id: 'scene-1',
+    name: 'Scene 1',
+    duration: 10,
+    fps: 30,
+    width: 1920,
+    height: 1080,
+    tracks: [],
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+]
 const mockAssets: any[] = []
 
 // Auth endpoints
 app.post('/api/auth/login', (req: Request, res: Response) => {
   const { email, password } = req.body
-  res.json({
-    user: {
-      id: 'user-1',
-      email,
-      name: email.split('@')[0],
-      role: 'creator',
-      subscription: 'pro',
-      createdAt: new Date(),
-    },
-    token: 'mock-token',
-  })
+  const user = {
+    id: 'user-1',
+    email,
+    name: email ? email.split('@')[0] : 'demo',
+    role: 'creator',
+    subscription: 'pro',
+    createdAt: new Date(),
+  }
+
+  // Seed mockProjects owner if not present
+  if (!mockProjects.find((p) => p.ownerId === user.id)) {
+    mockProjects.forEach((p) => {
+      if (!p.ownerId) p.ownerId = user.id
+    })
+  }
+
+  res.json({ user, token: 'mock-token' })
 })
 
 app.post('/api/auth/logout', (req: Request, res: Response) => {

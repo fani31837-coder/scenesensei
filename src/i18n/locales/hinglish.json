@@ -1,0 +1,58 @@
+{
+  "app": {
+    "name": "SceneSensei",
+    "tagline": "Pro 3D animation studio - Hinglish mode 🎬"
+  },
+  "nav": {
+    "home": "Home/होम",
+    "editor": "Editor/एडिटर",
+    "projects": "Projects/प्रोजेक्ट्स",
+    "marketplace": "Marketplace/मार्केट",
+    "account": "Account/खाता",
+    "settings": "Settings/सेटिंग्स",
+    "logout": "Logout/बाहर निकलें"
+  },
+  "editor": {
+    "viewport": "Viewport/दृश्य",
+    "timeline": "Timeline/टाइमलाइन",
+    "properties": "Properties/गुण",
+    "objects": "Objects/ऑब्जेक्ट्स",
+    "addObject": "Add Object/ऑब्जेक्ट जोड़ो",
+    "play": "Play/चलाओ",
+    "pause": "Pause/रोको",
+    "export": "Export/निर्यात",
+    "layers": "Layers/परतें",
+    "keyframe": "Keyframe/कीफ्रेम",
+    "addKeyframe": "Add Keyframe/कीफ्रेम जोड़ो",
+    "deleteKeyframe": "Delete Keyframe/कीफ्रेम हटाओ"
+  },
+  "marketplace": {
+    "search": "Search करो",
+    "category": "Category/कैटेगरी",
+    "price": "Price/कीमत",
+    "rating": "Rating/रेटिंग",
+    "download": "Download/डाउनलोड",
+    "assets": "Assets/एसेट्स"
+  },
+  "collab": {
+    "invite": "Invite करो",
+    "share": "Share करो",
+    "cursor": "Cursor/कर्सर",
+    "comment": "Comment/कमेंट"
+  },
+  "export": {
+    "format": "Format/प्रारूप",
+    "quality": "Quality/क्वालिटी",
+    "resolution": "Resolution/रेजोल्यूशन",
+    "fps": "FPS",
+    "start": "Export शुरू करो",
+    "status": "Status/स्थिति",
+    "downloading": "Download हो रहा है"
+  },
+  "errors": {
+    "notFound": "Not Found/नहीं मिला",
+    "unauthorized": "Access Denied/एक्सेस नहीं",
+    "serverError": "Server Error/सर्वर खराब",
+    "networkError": "Network Error/नेटवर्क खराब"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "app": {
+    "name": "SceneSensei",
+    "tagline": "पेशेवर 3D एनिमेशन स्टूडियो"
+  },
+  "nav": {
+    "home": "होम",
+    "editor": "संपादक",
+    "projects": "प्रोजेक्ट्स",
+    "marketplace": "मार्केटप्लेस",
+    "account": "खाता",
+    "settings": "सेटिंग्स",
+    "logout": "लॉगआउट"
+  },
+  "editor": {
+    "viewport": "व्यूपोर्ट",
+    "timeline": "टाइमलाइन",
+    "properties": "गुण",
+    "objects": "ऑब्जेक्ट्स",
+    "addObject": "ऑब्जेक्ट जोड़ें",
+    "play": "चलाएं",
+    "pause": "रोकें",
+    "export": "निर्यात करें",
+    "layers": "परतें",
+    "keyframe": "कीफ्रेम",
+    "addKeyframe": "कीफ्रेम जोड़ें",
+    "deleteKeyframe": "कीफ्रेम हटाएं"
+  },
+  "marketplace": {
+    "search": "खोज करें",
+    "category": "श्रेणी",
+    "price": "कीमत",
+    "rating": "रेटिंग",
+    "download": "डाउनलोड",
+    "assets": "एसेट्स"
+  },
+  "collab": {
+    "invite": "आमंत्रित करें",
+    "share": "साझा करें",
+    "cursor": "कर्सर",
+    "comment": "टिप्पणी"
+  },
+  "export": {
+    "format": "प्रारूप",
+    "quality": "गुणवत्ता",
+    "resolution": "रेजोल्यूशन",
+    "fps": "FPS",
+    "start": "निर्यात शुरू करें",
+    "status": "स्थिति",
+    "downloading": "डाउनलोड हो रहा है"
+  },
+  "errors": {
+    "notFound": "नहीं मिला",
+    "unauthorized": "अनुमति नहीं है",
+    "serverError": "सर्वर त्रुटि",
+    "networkError": "नेटवर्क त्रुटि"
+  }
+}
